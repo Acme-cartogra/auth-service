@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "auth-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8102"
+paths:
+  "/auths":
+    get:
+      summary: "List auths"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create auth"
+      responses:
+        "200":
+          description: OK
+  "/auths/{id}":
+    get:
+      summary: "Get auth by ID"
+      responses:
+        "200":
+          description: OK
